@@ -24,7 +24,7 @@ async def handle_message(message:Message):
     response=client.chat.completions.create(model="deepseek/deepseek-r1-0528",max_tokens=1000,messages=[{"role":"system","content":"you are powerful hacker"},{"role":"user","content":user_text}])
     await message.answer(f"<b>Deeepseek:\n</b><code>{response.choices[0].message.content}</code>")
 async def on_startup(app: web.Application):
-    await bot.set_webhook("https://pdfverse-1.onrender.com/webhook")
+    await bot.set_webhook("https://deepseek-chat-bot.onrender.com/webhook")
 
 def main():
     # Create aiohttp application
