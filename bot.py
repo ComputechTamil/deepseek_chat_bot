@@ -7,7 +7,7 @@ from aiogram.types import Message
 from aiogram.client.default import DefaultBotProperties
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 from aiohttp import web
-client=ai(api_key="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",base_url="https://openrouter.ai/api/v1")
+client=ai(api_key="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",base_url="https://openrouter.ai/api/v1")
 
 bot=Bot(token="8162812235:AAFXyPIEzixv7x6SxWA2QTg5Df7X6fv0e9I",default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp=Dispatcher()
