@@ -47,9 +47,6 @@ def main():
     
     # Run app (Render requires port 10000)
     web.run_app(app, host="0.0.0.0", port=10000)
-
-if __name__ == "__main__":
-    main()
 if __name__=="__main__":
     asyncio.run(main())
    
